@@ -1,0 +1,9 @@
+.nav-wrapper {
+    background-color: #fff;
+}
+nav a , nav ul a{
+    color: #000;
+}
+.show-on-large{
+    display: none !important;
+}
