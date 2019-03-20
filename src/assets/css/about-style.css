@@ -1,0 +1,24 @@
+@media(min-width: 1280px){
+    #about-grid{
+        padding-left: 15% !important;
+    }
+}
+@media (min-width: 600px){
+    #about-grid{
+        padding-left: 15% !important;
+    }
+}
+@media (max-width: 900px){
+    #about-grid{
+        padding-left: 8% !important;
+        font-size: 11px;
+    }
+    #about-grid h4{
+        font-size: 1.3rem;
+    }
+}
+/* font style about */
+.gridContainer{
+    margin: "auto";
+    text-align: "justify";
+}

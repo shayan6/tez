@@ -1,3 +1,17 @@
+@media(min-width: 1280px){
+    .mobile-tez-logo{
+        height: 65px;
+        width: 100px;
+    }
+}
+@media (max-width: 900px){
+    .mobile-tez-logo{
+        height: 40px;
+        width: 60px;
+    }
+}
+
+
 .header-wider-nav, .breadcrumb-nav{
     box-shadow:none;
 }
@@ -15,7 +29,7 @@
     margin-top: 0;
     background-color: #4caf50;
     color: white;
-    padding: 2%;
+    padding: 3%;
 }
 .bg-green h2,.bg-green h3,.bg-green h4,.bg-green h5{
     text-align: center;

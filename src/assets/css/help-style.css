@@ -1,3 +1,9 @@
 .collapsible-body{
     background-color: white;
 }
+@media(max-width: 600px){
+    .collapsible-header{
+        line-height: 1.4rem;
+        padding: 1em 1rem;
+    }
+}
