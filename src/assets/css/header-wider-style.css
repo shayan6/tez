@@ -1,0 +1,22 @@
+.header-wider-nav, .breadcrumb-nav{
+    box-shadow:none;
+}
+.header-wider-nav .nav-wrapper, .breadcrumb-nav .nav-wrapper{
+    background-color: #4caf50;
+}
+
+.header-wider-nav .nav-wrapper .col a{
+    color: white;
+}
+#nav-mobile li a{
+    color: black;
+}
+.bg-green{
+    margin-top: 0;
+    background-color: #4caf50;
+    color: white;
+    padding: 2%;
+}
+.bg-green h2,.bg-green h3,.bg-green h4,.bg-green h5{
+    text-align: center;
+}

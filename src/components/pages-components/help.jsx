@@ -1,28 +1,60 @@
 import React, { Component } from 'react';
 import { Collapsible, CollapsibleItem } from 'react-materialize';
-class Help extends Component {
+import Grid from '@material-ui/core/Grid';
+import '../../assets/css/help-style.css';
+import Hidden from '@material-ui/core/Hidden';
+
+class Help extends Component {    
     render() { 
         return (
             <React.Fragment>
-                <h1>Help</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
-                <br/>
-                <Collapsible popout defaultActiveKey={1}>
-                    <CollapsibleItem header='First' icon='filter_drama'>
-                        Lorem ipsum dolor sit amet.
-                    </CollapsibleItem>
-                    <CollapsibleItem header='Second' icon='place'>
-                        Lorem ipsum dolor sit amet.
-                    </CollapsibleItem>
-                    <CollapsibleItem header='Third' icon='whatshot'>
-                        Lorem ipsum dolor sit amet.
-                    </CollapsibleItem>
-                </Collapsible>
-                <br/>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, quam exercitationem. Voluptate aperiam sit error nam vel reiciendis odit adipisci optio ut doloremque, perferendis quo, animi earum delectus, explicabo sed.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda quasi voluptatibus ad nobis aut, accusantium sit obcaecati beatae dolorum excepturi esse, tenetur et. Magnam aspernatur dicta deleniti quia beatae!</p>
-            </React.Fragment> 
+                <section>
+                    <Grid container spacing={12}>
+                        <Hidden xsDown>
+                            <Grid item xs={2} sm={2} lg={2} style={{ 'padding' : "19px" }}>
+                                <ul>
+                                    <li><a href="/help"><p>List FAQs</p></a></li>
+                                    <li><a href="/help"><p>List FAQs</p></a></li>
+                                    <li><a href="/help"><p>List FAQs</p></a></li>
+                                    <li><a href="/help"><p>List FAQs</p></a></li>
+                                    <li><a href="/help"><p>List FAQs</p></a></li>
+                                </ul>
+                            </Grid>
+                        </Hidden>
+                        <Grid item xs={12} sm={10} lg={10} style={{'z-index':'100'}}>
+                            <Collapsible popout style={{'margin-top':'-80px'}}>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                                <CollapsibleItem header='Question ?' icon='contact_support'>
+                                    Lorem ipsum dolor sit amet.
+                                </CollapsibleItem>
+                            </Collapsible>
+                        </Grid>
+                    </Grid>
+                    <br />
+                    <br />
+                    <br />
+                </section>
+            </React.Fragment>
         );
     }
 }

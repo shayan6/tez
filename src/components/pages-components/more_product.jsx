@@ -3,7 +3,7 @@ import { Parallax } from 'react-materialize';
 class MoreProduct extends Component {
     render() { 
         return (
-            <React.Fragment>
+            <section>
                 <h1>More Product</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
                 <div>
@@ -17,7 +17,7 @@ class MoreProduct extends Component {
                     <Parallax imageSrc="http://materializecss.com/images/parallax2.jpg"/>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
-            </React.Fragment> 
+            </section> 
         );
     }
 }

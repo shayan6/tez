@@ -3,7 +3,7 @@ import { Slider, Slide } from 'react-materialize';
 class Home extends Component {
     render() { 
         return (
-            <React.Fragment>
+            <section>
                 <h1>Home</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
@@ -30,7 +30,7 @@ class Home extends Component {
                 <br/>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat dolorum illo a nobis rerum nostrum expedita saepe ea dolore, amet delectus maiores laudantium sapiente suscipit architecto corporis? Ex, quo placeat!</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat dolorum illo a nobis rerum nostrum expedita saepe ea dolore, amet delectus maiores laudantium sapiente suscipit architecto corporis? Ex, quo placeat!</p>
-            </React.Fragment> 
+            </section> 
         );
     }
 }

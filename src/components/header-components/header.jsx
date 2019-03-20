@@ -10,7 +10,7 @@ class Header extends Component {
         let img = <img src={logo} alt="tez" height="25px" width="20px" />;
         return ( 
             <React.Fragment>
-                <Navbar brand={img} right>
+                <Navbar brand={img} fixed={true} right>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/tez_advance'>Tez Advance</Link></li>
                     <li><Link to='/more_product'>More Product</Link></li>

@@ -16,7 +16,10 @@ h1,h2,h3,h4,h5,h6,ul{
 p{
     font-family: 'Open Sans';
 }
-
+section{
+    margin: auto;
+    width: 75%;
+}
 
 /* footer style **************************************************************************/
 .nav-wrapper .col.s12{

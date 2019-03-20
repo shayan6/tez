@@ -3,7 +3,7 @@ import { Carousel } from 'react-materialize';
 class TezAdvance extends Component {
     render() { 
         return (
-            <React.Fragment>
+            <section>
                 <h1>Tez Advance</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
@@ -18,7 +18,7 @@ class TezAdvance extends Component {
                 <br/>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita fugit placeat nobis saepe sed, doloremque tenetur amet voluptatem quas quos hic non omnis excepturi voluptas impedit animi esse nulla dolorem?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita fugit placeat nobis saepe sed, doloremque tenetur amet voluptatem quas quos hic non omnis excepturi voluptas impedit animi esse nulla dolorem?</p>
-            </React.Fragment> 
+            </section> 
         );
     }
 }

@@ -1,0 +1,24 @@
+#preloader{
+    overflow: hidden;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    background: linear-gradient(to bottom right, #3ad18a, #1c6fb5);
+}
+#tez-loader {
+    background-image: url('../img/bg-pattern.png');
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+}
+#tez-loader img{
+    filter: brightness(3);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 150px;
+    width: auto;
+}
