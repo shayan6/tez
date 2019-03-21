@@ -7,13 +7,13 @@ import logo from '../../assets/img/tez.png';
 class Header extends Component {
     
     render() { 
-        let img = <img src={logo} alt="tez" height="25px" width="20px" />;
+        let img = <img src={logo} className="headerLogo" alt="tez" />;
         return ( 
             <React.Fragment>
                 <Navbar brand={img} fixed={true} right>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/tez_advance'>Tez Advance</Link></li>
-                    <li><Link to='/more_product'>More Product</Link></li>
+                    <li><Link to='/more_product'>More Products</Link></li>
                     <li><Link to='/help'>Help</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                 </Navbar>

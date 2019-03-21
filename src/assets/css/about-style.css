@@ -7,18 +7,48 @@
     #about-grid{
         padding-left: 15% !important;
     }
+    .gridContainer{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
 }
+@media (max-width: 600px){
+    .gridContainer{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+}
+
 @media (max-width: 900px){
-    #about-grid{
-        padding-left: 8% !important;
+    #about-grid, .gridContainer{
         font-size: 11px;
     }
-    #about-grid h4{
+    #about-grid h4, .gridContainer h3{
         font-size: 1.3rem;
+    }
+    #tecTree{
+        margin: auto;
+        height:250px;
+        width:280px;
+    }
+}
+@media (min-width: 900px){
+    #tecTree{
+        height:300px;
+        width:350px;
     }
 }
 /* font style about */
 .gridContainer{
     margin: "auto";
     text-align: "justify";
+}
+.hrDivider{
+    height: 1px;
+    width: 70px;
+    float: left;
+    position: absolute;
+    margin: auto;
+    background: #0089ec;
+    border: 1px solid #0089ec;
 }

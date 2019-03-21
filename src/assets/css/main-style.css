@@ -28,6 +28,9 @@ section{
 .MuiButton-containedPrimary-110{
     background-color: #4caf50 !important;
 }
+.blue-text{
+    color:rgb(28, 111, 181);
+}
 
 /* slider problem *************************************************************************/
 #sidenav-overlay {

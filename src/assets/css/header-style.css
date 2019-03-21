@@ -7,3 +7,9 @@ nav a , nav ul a{
 .show-on-large{
     display: none !important;
 }
+.headerLogo{
+    position: absolute;
+    top: 10px;
+    height: 45px;
+    width: 35px;
+}

@@ -85,7 +85,7 @@ class Help extends Component {
               </Grid>
             </Hidden>
             <Grid item xs={12} sm={10} lg={10} style={{ "zIndex": "100" }}>
-              <Collapsible popout style={{ "marginTop": "-80px" }}>
+              <Collapsible style={{ "marginTop": "-80px" }}>
                 {questionsAnsEng.map((objVal,key) => (
                   <CollapsibleItem key={key} header={objVal.question} icon={icon}  >
                      {objVal.answer} 

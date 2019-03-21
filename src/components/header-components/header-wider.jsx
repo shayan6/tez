@@ -13,7 +13,7 @@ class Header extends Component {
                 <Navbar className='header-wider-nav' brand={img} right>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/tez_advance'>Tez Advance</Link></li>
-                    <li><Link to='/more_product'>More Product</Link></li>
+                    <li><Link to='/more_product'>More Products</Link></li>
                     <li><Link to='/help'>Help</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                 </Navbar>
