@@ -22,7 +22,20 @@ section{
 
 @media (min-width: 600px){
     .box{
-        width: 75%;
+        width: 70%;
+        margin: auto;
+    }
+    .box p{
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 600px){
+    .box{
+        padding:10%;
+    }
+    .box h3{
+        font-size: 1.5rem;
+        margin: auto;
     }
 }
 .MuiButton-containedPrimary-110{
@@ -30,6 +43,20 @@ section{
 }
 .blue-text{
     color:rgb(28, 111, 181);
+}
+.hrDivider{
+    height: 1px;
+    width: 70px;
+    float: left;
+    position: absolute;
+    margin: auto;
+    background: #0089ec;
+    border: 1px solid #0089ec;
+}
+.hrDividerCenter{
+    width: 10vh;
+    background: #0089ec;
+    border: 2px solid #0089ec;
 }
 
 /* slider problem *************************************************************************/

@@ -4,6 +4,9 @@
 nav a , nav ul a{
     color: #000;
 }
+nav ul a{
+    font-variant-caps: all-petite-caps;
+}
 .show-on-large{
     display: none !important;
 }

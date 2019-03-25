@@ -1,66 +1,92 @@
-@media(min-width: 1280px){
-    #about-grid{
-        padding-left: 15% !important;
-    }
+@media (min-width: 1280px) {
+  #about-grid {
+    padding-left: 15% !important;
+  }
 }
-@media (min-width: 600px){
-    #about-grid{
-        padding-left: 15% !important;
-    }
-    .gridContainer{
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
+@media (min-width: 600px) {
+  #about-grid {
+    padding-left: 15% !important;
+  }
+  .gridContainer {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
 }
-@media (max-width: 600px){
-    .gridContainer{
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-    }
+@media (max-width: 600px) {
+  .gridContainer {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
 }
 
-@media (max-width: 900px){
-    #about-grid, .gridContainer{
-        font-size: 11px;
-    }
-    #about-grid h4, .gridContainer h3{
-        font-size: 1.3rem;
-    }
-    #tecTree{
-        margin: auto;
-        height:250px;
-        width:280px;
-    }
+@media (max-width: 900px) {
+  #about-grid,
+  .gridContainer {
+    font-size: 11px;
+  }
+  #about-grid h4,
+  .gridContainer h3 {
+    font-size: 1.3rem;
+  }
+  #tecTree {
+    margin: auto;
+    height: 250px;
+    width: 280px;
+  }
 }
-@media (min-width: 900px){
-    #tecTree{
-        height:300px;
-        width:350px;
-    }
+@media (min-width: 900px) {
+  #tecTree {
+    height: 300px;
+    width: 350px;
+  }
 }
 /* font style about */
-.gridContainer{
-    margin: "auto";
-    text-align: "justify";
-}
-.hrDivider{
-    height: 1px;
-    width: 70px;
-    float: left;
-    position: absolute;
-    margin: auto;
-    background: #0089ec;
-    border: 1px solid #0089ec;
+.gridContainer {
+  margin: "auto";
+  text-align: "justify";
 }
 
 /* sectinon team */
-.perTeam{
-    text-align: center;
+.perTeam {
+  margin: 50px auto;
+  text-align: center;
+  line-height: 0.2;
 }
-.perTeam img{
-   border-radius: 50%;
-   height: 50%;
-   width: 50%;
-   margin: auto;
-   box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+.perTeam img {
+  filter: scale(0%);
+  border-radius: 50%;
+  height: 45%;
+  width: 45%;
+  margin: auto;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  /* filter: saturate(0%); */
+}
+.perTeam h5 {
+  font-family: "Open Sans";
+  padding-top: 1%;
+  font-size: 19px;
+}
+strong {
+  font-weight: bolder;
+}
+.perTeam img:hover {
+  filter: saturate(0%);
+}
+
+/* investor section */
+.perInvestor img {
+  height: 32vh;
+  margin: auto;
+}
+.perInvestor h5 {
+  font-family: "Open Sans";
+}
+.perInvestor p {
+  font-size: 13px;
+  text-align: justify;
+}
+.imgBox {
+  margin: 1% 10%;
+  /* box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.6); */
+  padding: 2%;
 }

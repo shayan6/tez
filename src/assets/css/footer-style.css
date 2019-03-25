@@ -12,12 +12,14 @@ footer.page-footer {
 }
 .footerJoinUs{
     margin: auto !important;
+    font-variant-caps: small-caps;
 }
 .footer-copyright{
     background-image:linear-gradient( to left, #00c367 0%, #00c367 12%, rgba(77, 172, 150, 1) 47%, rgba(28, 111, 181, 1) 100% );
 }
 .footerContact h5, .footerLink h5{
     font-size: 19px;
+    font-variant-caps: small-caps;
 }
 .footerContact li, .footerLink li, .footerLink li a, .footerJoinUs{
     font-family: 'Open Sans';

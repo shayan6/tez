@@ -8,24 +8,140 @@ import tezWallet from "../../assets/img/tez-wallet.jpg";
 import Hidden from "@material-ui/core/Hidden";
 import Slider from "react-slick";
 
+// team images ############################################################
+import shayan from "../../assets/img/shayan.jpg";
+import nadeem from "../../assets/img/nadeem.jpg";
+import humza from "../../assets/img/humza.jpg";
+import naureen from "../../assets/img/naureen.jpg";
+import shoaib from "../../assets/img/shoaib.jpg";
+import jamal from "../../assets/img/jamal.jpg";
+import shafiq from "../../assets/img/shafiq.jpg";
+import adeel from "../../assets/img/adeel.jpg";
+import laiba from "../../assets/img/laiba.jpg";
 
-import shayan from '../../assets/img/shayan.jpg'; 
-import nadeem from '../../assets/img/nadeem.jpg';
-import humza from '../../assets/img/humza.png'; 
-import naureen from '../../assets/img/naureen.jpg';
-import shoaib from '../../assets/img/shoaib.jpg';
-import jamal from '../../assets/img/jamal.jpg';
-import shafiq from '../../assets/img/shafiq.jpg';
+// imvestors images #######################################################
+import planetN from "../../assets/img/investors/planet-n.png";
+import omidyar from "../../assets/img/investors/omidyar.png";
+import accion from "../../assets/img/investors/accion.png";
 
 class About extends Component {
   render() {
-    var settings = {
+    const styleRel = {
+      fontWeight: "700",
+      color: "#4caf50",
+      fontSize: "14px"
+    };
+    const settings = {
       dots: true,
       infinite: true,
       speed: 500,
+      autoplay: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 620,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    };
+    const settingsInvestors = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
       slidesToShow: 1,
       slidesToScroll: 1
     };
+    const tezMembers = [
+      {
+        srcPic: nadeem,
+        name: "NADEEM HUSSAIN",
+        rel: "Founder & Chief Executive Officer",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: naureen,
+        name: "NAUREEN HYAT",
+        rel: "Co-Founder & Business Head",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: humza,
+        name: "HUMZA HUSSAIN",
+        rel: "Co-Founder & Business Head",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: shoaib,
+        name: "SHOAIB LALANI",
+        rel: "Business Head",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: jamal,
+        name: "JAMALUDDIN",
+        rel: "Marketing Manager",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: shafiq,
+        name: "SHAFIQ-UR-REHMAN",
+        rel: "Finance Manager",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: shayan,
+        name: "SHAYAN SHAIKH",
+        rel: "Software Engineer",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: adeel,
+        name: "Adeel Raees",
+        rel: "IT Manager",
+        srcLinkdin: "https://www.linkedin.com/in/laiba-sajid-9b642517b/"
+      },
+      {
+        srcPic: laiba,
+        name: "Laiba Sajid",
+        rel: "Customer Support Executive",
+        srcLinkdin: "https://www.linkedin.com/in/laiba-sajid-9b642517b/"
+      }
+    ];
+    const tezInvestors = [
+      {
+        srcPic: planetN,
+        name: "PLANET N",
+        description:
+          "Planet N Group, founded by Mr. Nadeem Hussain, is Pakistan’s largest tech-focused growth capital and incubator platform, comprising portfolio companies across Fintech, Data Analytics, AI, Blockchain, Healthtech, & Edutech. Planet N adds value to its portfolio entities via involvement in key operational areas, business consulting, cross-group synergies, international expansion facilitation and strategic partnerships.",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: omidyar,
+        name: "OMIDYAR NETWORK",
+        description:
+          "One of the largest social impact investors globally. Established in 2004 by eBay founder Pierre Omidyar and his wife Pam Omidyar, ON has committed over USD 992 Million to nonprofit organizations and for-profit companies across multiple investment areas, including Consumer Internet & Mobile, Education, Financial Inclusion, Governance & Citizen Engagement, and Property Rights.",
+        srcLinkdin: "https://www.linkedin.com/"
+      },
+      {
+        srcPic: accion,
+        name: "ACCION",
+        description:
+          "Accion International, is the largest microfinance investor and a global nonprofit organization that supports microfinance institutions to serve low-income clients. Accion has helped build 63 microfinance institutions in 32 countries. Accion Venture Lab is an investment initiative of Accion International that provides seed capital and management support to fintech start-ups.",
+        srcLinkdin: "https://www.linkedin.com/"
+      }
+    ];
     return (
       <React.Fragment>
         {/* Section Tez is revolutionizing access start *****************************************************/}
@@ -94,7 +210,7 @@ class About extends Component {
               xs={12}
               sm={6}
               lg={6}
-              style={{ color: "black", margin: "auto", textAlign: "justify" }}
+              style={{ margin: "auto", textAlign: "justify" }}
               className="gridContainer"
             >
               <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
@@ -121,155 +237,98 @@ class About extends Component {
           </Grid>
         </section>
         {/* Section Tez vision and mission end *********************************************************************/}
+        {/* Section Tez team start *********************************************************************/}
         <section style={{ background: "rgb(242, 242, 242)" }}>
-          <div className="box" style={{margin:'auto', padding:'5% 0'}}>
+          <div className="box">
             <Grid container>
-              <Grid item xs={12} sm={12} lg={12} style={{ textAlign: "center" }}>
-                <h3>Our Team</h3>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                lg={12}
+                style={{ textAlign: "center", padding: "3% 0" }}
+              >
+                <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
+                  Our Team
+                </h3>
+                <hr className="hrDividerCenter" />
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-                  dolore, ipsam deserunt adipisci asperiores, architecto a iste
-                  deleniti ad reiciendis recusandae saepe esse? Veniam delectus
-                  numquam harum. Soluta, animi sunt.
-                </p><br/><br/><br/><br/>
+                  A team where art and science come together to create positive,
+                  sustainable impact.
+                </p>
               </Grid>
-              <Grid item xs={12} sm={12} lg={12} style={{ textAlign: "center" }}>
+              <Grid item xs={12} sm={12} lg={12}>
                 <Slider {...settings}>
-                  <div>
-                    <Grid container>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={nadeem}
-                            alt="example avatar"
-                          />
-                          <h5 style={{fontFamily:'Open Sans'}}> 
-                            <strong style={{fontWeight:'bolder'}}>
-                              Nadeem Hussain 
-                            </strong>
-                          </h5>
-                          <p style={{fontWeight:'700',color:'#007bff'}}>CEO Planet N</p>
-                          <i> Icon </i>
-                        </div>
-                      </Grid>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={humza}
-                            alt="example avatar"
-                          />
-                          <h5 style={{fontFamily:'Open Sans'}}> 
-                            <strong style={{fontWeight:'bolder'}}>
-                              Humza Hussain
-                            </strong>
-                          </h5>
-                          <p style={{fontWeight:'700',color:'#007bff'}}>CO Founder TEZ</p>
-                          <i> Icon </i>
-                        </div>
-                      </Grid>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={naureen}
-                            alt="example avatar"
-                          />
-                          <h5 style={{fontFamily:'Open Sans'}}> 
-                            <strong style={{fontWeight:'bolder'}}>
-                              Naureen Hyat
-                            </strong>
-                          </h5>
-                          <p style={{fontWeight:'700',color:'#007bff'}}>CO Founder TEZ</p>
-                          <i> Icon </i>
-                        </div>
-                      </Grid>
-                    </Grid>
-                  </div>
-                  <div>
-                    <Grid container>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={shoaib}
-                            alt="example avatar"
-                          />
-                          <h5 style={{fontFamily:'Open Sans'}}> 
-                            <strong style={{fontWeight:'bolder'}}>
-                              Shoaib Lalani
-                            </strong>
-                          </h5>
-                          <p style={{fontWeight:'700',color:'#007bff'}}></p>
-                          <i> Icon </i>
-                        </div>
-                      </Grid>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={jamal}
-                            alt="example avatar"
-                          />
-                          <h5 style={{fontFamily:'Open Sans'}}> 
-                            <strong style={{fontWeight:'bolder'}}>
-                              Jamal udin 
-                            </strong>
-                          </h5>
-                          <p style={{fontWeight:'700',color:'#007bff'}}></p>
-                          <i> Icon </i>
-                        </div>
-                      </Grid>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={shayan}
-                            alt="example avatar"
-                          />
-                          <h5 style={{fontFamily:'Open Sans'}}> 
-                            <strong style={{fontWeight:'bolder'}}>
-                              Shayan Shaikh 
-                            </strong>
-                          </h5>
-                          <p style={{fontWeight:'700',color:'#007bff'}}>Software Engineer</p>
-                          <i> Icon </i>
-                        </div>
-                      </Grid>
-                    </Grid>
-                  </div>
-                  <div>
-                    <Grid container>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={shafiq}
-                            alt="example avatar"
-                          />
-                        </div>
-                      </Grid>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={shafiq}
-                            alt="example avatar"
-                          />
-                        </div>
-                      </Grid>
-                      <Grid item xs={4} sm={4} lg={4}>
-                        <div className="perTeam">
-                          <img
-                            src={shafiq}
-                            alt="example avatar"
-                          />
-                        </div>
-                      </Grid>
-                    </Grid>
-                  </div>
+                  {tezMembers.map((objVal, key) => (
+                    <div key={key} className="perTeam">
+                      <img src={objVal.srcPic} alt="example avatar" />
+                      <h5>
+                        <strong>{objVal.name}</strong>
+                      </h5>
+                      <p style={styleRel}>{objVal.rel}</p>
+                      <i> Icon </i>
+                    </div>
+                  ))}
                 </Slider>
-                <br />
-                <br />
-                <br />
-                <br />
               </Grid>
             </Grid>
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
         </section>
+        {/* Section Tez team end *********************************************************************/}
+        {/* Section Tez investors start *********************************************************************/}
+        <section>
+          <div className="box">
+            <Grid container>
+              <Grid
+                item
+                xs={12}
+                sm={12}
+                lg={12}
+                style={{ textAlign: "center", padding: "3% 0" }}
+              >
+                <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
+                  Our Investors
+                </h3>
+                <hr className="hrDividerCenter" />
+                {/* <p>
+                  A team where art and science come together to create positive,
+                  sustainable impact.
+                </p> */}
+              </Grid>
+              <Grid item xs={12} sm={12} lg={12}>
+                <Slider {...settingsInvestors}>
+                  {tezInvestors.map((objVal, key) => (
+                    <div key={key}>
+                      <Grid container className="perInvestor">
+                        <Grid item xs={12} sm={6} lg={6}>
+                          <h5>
+                            <strong>{objVal.name}</strong>
+                          </h5>
+                          <p>{objVal.description}</p>
+                          <i> Icon </i>
+                        </Grid>
+                        <Grid item xs={12} sm={6} lg={6}>
+                          <div className="imgBox">
+                            <img src={objVal.srcPic} alt="example avatar" />
+                          </div>
+                        </Grid>
+                      </Grid>
+                    </div>
+                  ))}
+                </Slider>
+              </Grid>
+            </Grid>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+        </section>
+        {/* Section Tez investors end *********************************************************************/}
       </React.Fragment>
     );
   }

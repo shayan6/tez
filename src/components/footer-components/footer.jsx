@@ -12,14 +12,13 @@ class FooterComponent extends Component {
       fbImg,
       inImg,
       tweetImg,
-      playImg,
-      brickImg
+      playImg
     } = this.props.footerContent;
     return (
       <React.Fragment>
         <footer
           className="page-footer footer"
-          style={{ backgroundImage: `url(${brickImg})` }}
+          // style={{ backgroundImage: `url(${brickImg})` }}
         >
           <div className="footer-container">
             <Grid container>
