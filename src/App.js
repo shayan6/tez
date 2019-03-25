@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import tezLogo from './assets/img/tez.png';
 import './assets/css/main-style.css';
 
 // pasges components
@@ -14,6 +13,16 @@ import Home from './components/pages-components/home';
 import Loader from './components/loader';
 import MoreProduct from './components/pages-components/more_product';
 import TezAdvance from './components/pages-components/tez_advance';
+
+//pages images
+// import tezLogo from './assets/img/tez.png';
+// import tezLogoGreen from './assets/img/tez-green.png';
+import tezLogoBlue from './assets/img/tez-blue.png';
+import fbImg from "./assets/img/fb.png";
+import brickImg from "./assets/img/footer-img.png";
+import tweetImg from "./assets/img/tweet.png";
+import inImg from "./assets/img/in.png";
+import playImg from "./assets/img/play.png";
 
 class App extends Component {
   
@@ -40,7 +49,7 @@ class App extends Component {
           <div className="App">
             {/* Other Pages Routes Start ******************************************************/}
               
-              <Route exact path='/' component={ Header} />
+              <Route exact path='/' component={ Header } />
               <Route exact path='/' component={ Home} />
 
               <Route exact path='/tez_advance' component={ Header} />
@@ -60,7 +69,7 @@ class App extends Component {
             {/* Other Pages Routes End   ******************************************************/}
 
             {/* Footer Component Start ********************************************************/}
-              <FooterComponent tezLogo={tezLogo} />
+              <FooterComponent footerContent={{tezLogoBlue,fbImg,inImg,tweetImg,playImg,brickImg}} />
             {/* Footer Component End ********************************************************/}
           </div>
         </Router>

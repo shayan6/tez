@@ -11,11 +11,17 @@ footer.page-footer {
     /* height: 180px; */
 }
 .footerJoinUs{
-    margin: auto;
+    margin: auto !important;
+}
+.footer-copyright{
+    background-image:linear-gradient( to left, #00c367 0%, #00c367 12%, rgba(77, 172, 150, 1) 47%, rgba(28, 111, 181, 1) 100% );
+}
+.footerContact h5, .footerLink h5{
+    font-size: 19px;
 }
 .footerContact li, .footerLink li, .footerLink li a, .footerJoinUs{
     font-family: 'Open Sans';
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 1.5em;
     color: grey;
@@ -24,7 +30,7 @@ footer.page-footer {
     line-height: 2em;
 }
 .footerContact li i{
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 8px;
 }
 .footerLink li a:hover{
@@ -32,30 +38,37 @@ footer.page-footer {
     text-decoration: black;
 }
 .footerJoinUs img{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
+    margin: 1%;
     cursor: pointer;
 }
 @media(min-width: 1280px){
     #imgFooter{
-        height: 100px;
+        height: 90px;
     }
 }
 @media (min-width: 600px){
     .footer-container{
-        padding: 0 5%;
+        padding: 0% 5%;
     }
     #imgFooter{
-        height: 90px;
+        height: 80px;
     }
 }
 @media (max-width: 600px){
+    .footerLink{
+        text-align: right;
+    }
+    .footer-img{
+        text-align: center;
+    }
     .footer-container{
         padding-left: 10%; 
-        padding-right: 5%;
+        padding-right: 10%;
     }
     #imgFooter{
-        height: 70px;
+        height: 60px;
     }
     .footerContact li, .footerLink li{
         font-size: 10px;

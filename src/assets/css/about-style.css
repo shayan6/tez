@@ -52,3 +52,15 @@
     background: #0089ec;
     border: 1px solid #0089ec;
 }
+
+/* sectinon team */
+.perTeam{
+    text-align: center;
+}
+.perTeam img{
+   border-radius: 50%;
+   height: 50%;
+   width: 50%;
+   margin: auto;
+   box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}

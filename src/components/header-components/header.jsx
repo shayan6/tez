@@ -5,8 +5,8 @@ import '../../assets/css/header-style.css';
 import logo from '../../assets/img/tez.png';
 
 class Header extends Component {
-    
     render() { 
+        console.log(this.props.route);
         let img = <img src={logo} className="headerLogo" alt="tez" />;
         return ( 
             <React.Fragment>
