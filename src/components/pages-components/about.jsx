@@ -8,6 +8,8 @@ import tezWallet from "../../assets/img/tez-wallet.jpg";
 import Hidden from "@material-ui/core/Hidden";
 import Slider from "react-slick";
 
+import inWhite from "../../assets/img/in-white.png";
+
 // team images ############################################################
 import shayan from "../../assets/img/shayan.jpg";
 import nadeem from "../../assets/img/nadeem.jpg";
@@ -25,10 +27,13 @@ import omidyar from "../../assets/img/investors/omidyar.png";
 import accion from "../../assets/img/investors/accion.png";
 
 class About extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const styleRel = {
       fontWeight: "700",
-      color: "#4caf50",
+      color: "rgb(28, 111, 181)",
       fontSize: "14px"
     };
     const settings = {
@@ -108,13 +113,13 @@ class About extends Component {
       },
       {
         srcPic: adeel,
-        name: "Adeel Raees",
-        rel: "IT Manager",
+        name: "ADEEL RAEES",
+        rel: "Manager IT",
         srcLinkdin: "https://www.linkedin.com/in/laiba-sajid-9b642517b/"
       },
       {
         srcPic: laiba,
-        name: "Laiba Sajid",
+        name: "LAIBA SAJID",
         rel: "Customer Support Executive",
         srcLinkdin: "https://www.linkedin.com/in/laiba-sajid-9b642517b/"
       }
@@ -158,6 +163,9 @@ class About extends Component {
               sm={6}
               lg={6}
               id="about-grid"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-once="true"
               style={{ margin: "auto", textAlign: "justify" }}
             >
               <h4 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5 " }}>
@@ -213,33 +221,51 @@ class About extends Component {
               style={{ margin: "auto", textAlign: "justify" }}
               className="gridContainer"
             >
-              <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
-                Vision <hr className="hrDivider" />{" "}
-              </h3>
-              <p>
-                To accelerate financial inclusion by leveraging upon the power
-                of digital and transcending the masses from a state of financial
-                vulnerability to economic empowerment – thereby bringing
-                positive, effective change.
-              </p>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-once="true"
+              >
+                <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
+                  Vision <hr className="hrDivider" />{" "}
+                </h3>
+                <p>
+                  To accelerate financial inclusion by leveraging upon the power
+                  of digital and transcending the masses from a state of
+                  financial vulnerability to economic empowerment – thereby
+                  bringing positive, effective change.
+                </p>
+              </div>
               <br />
-              <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
-                Mission <hr className="hrDivider" />{" "}
-              </h3>
-              <p>
-                To revolutionize the financial sector by providing swift and
-                frictionless financial access to the unbanked and under-banked
-                by aggregating credit, savings, insurance, and investments into
-                a single platform – a smartphone application - thereby
-                accelerating financial inclusion.{" "}
-              </p>
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
+                <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
+                  Mission <hr className="hrDivider" />{" "}
+                </h3>
+                <p>
+                  To revolutionize the financial sector by providing swift and
+                  frictionless financial access to the unbanked and under-banked
+                  by aggregating credit, savings, insurance, and investments
+                  into a single platform – a smartphone application - thereby
+                  accelerating financial inclusion.{" "}
+                </p>
+              </div>
             </Grid>
           </Grid>
         </section>
         {/* Section Tez vision and mission end *********************************************************************/}
         {/* Section Tez team start *********************************************************************/}
         <section style={{ background: "rgb(242, 242, 242)" }}>
-          <div className="box">
+          <div
+            className="box"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <Grid container>
               <Grid
                 item
@@ -261,12 +287,23 @@ class About extends Component {
                 <Slider {...settings}>
                   {tezMembers.map((objVal, key) => (
                     <div key={key} className="perTeam">
-                      <img src={objVal.srcPic} alt="example avatar" />
+                      <div className="imgBox">
+                        <img src={objVal.srcPic} alt="example avatar" />
+                        <div className="hvrbox-layer_top hvrbox-layer_slideup">
+                          <div className="hvrbox-text">
+                            {/* <h3>in</h3> */}
+                            <img
+                              src={inWhite}
+                              alt="IN"
+                              style={{ filter: "brightness(3)" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
                       <h5>
                         <strong>{objVal.name}</strong>
                       </h5>
                       <p style={styleRel}>{objVal.rel}</p>
-                      <i> Icon </i>
                     </div>
                   ))}
                 </Slider>
@@ -281,7 +318,12 @@ class About extends Component {
         {/* Section Tez team end *********************************************************************/}
         {/* Section Tez investors start *********************************************************************/}
         <section>
-          <div className="box">
+          <div
+            className="box"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <Grid container>
               <Grid
                 item
@@ -290,7 +332,9 @@ class About extends Component {
                 lg={12}
                 style={{ textAlign: "center", padding: "3% 0" }}
               >
-                <h3 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}>
+                <h3
+                  style={{ fontVariantCaps: "small-caps", color: "#1c6fb5" }}
+                >
                   Our Investors
                 </h3>
                 <hr className="hrDividerCenter" />
