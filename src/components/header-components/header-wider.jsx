@@ -21,7 +21,7 @@ class Header extends Component {
                 {/* Grid Nav Bottom Contents */}
                 <Grid container  className="bg-green">
                     <Grid item xs={12} sm={12} lg={12}>
-                        <h3> Need Help ? </h3>
+                        <h3 style={{fontVariant:'petite-caps'}}> Need Help ? </h3>
                     </Grid>
                     <Grid item xs={4} sm={1} lg={1}></Grid>
                     <Grid item xs={8} sm={12} lg={12}>

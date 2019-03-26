@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import AtTez  from './sections/section-at-tez';
+import '../../../assets/css/career-style.css';
+import tecNetwork from '../../../assets/img/tec-network.png';
 
 class Career extends Component {
   render() {
     return (
       <React.Fragment>
-        <br />
+        <AtTez img={{tecNetwork}} />
       </React.Fragment>
     );
   }

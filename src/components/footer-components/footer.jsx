@@ -63,19 +63,19 @@ class FooterComponent extends Component {
                         </li>
                       </Hidden>
                       <li>
-                        <Link to="/about#">About</Link>
+                        <Link to="/about">About</Link>
                       </li>
                       <li>
                         <Link to="/about">Press</Link>
                       </li>
                       <li>
-                        <Link to="/about">Career</Link>
+                        <Link to="/career">Career</Link>
                       </li>
                       <li>
                         <Link to="/about">Privacy Policy</Link>
                       </li>
                       <li>
-                        <Link to="/about">Site Map</Link>
+                        <Link to="/career">Site Map</Link>
                       </li>
                       <li>
                         <Link to="/about">Terms & Conditions</Link>

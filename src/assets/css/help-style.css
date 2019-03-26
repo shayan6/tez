@@ -1,9 +1,18 @@
 .collapsible-body{
     background-color: white;
+    font-weight: 600;
+    color: grey;
+    text-transform: capitalize;
 }
 @media(max-width: 600px){
     .collapsible-header{
         line-height: 1.4rem;
         padding: 1em 1rem;
     }
+}
+.collapsible-header span{
+    text-transform: uppercase;
+}
+.sideLink li a.active{
+    font-weight: 600;
 }
