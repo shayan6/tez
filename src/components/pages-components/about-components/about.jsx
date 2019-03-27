@@ -7,15 +7,15 @@ import VisionAndMission from "./sections/vision-and-mission";
 import "../../../assets/css/about-style.css";
 
 // team images #############################################################
-import shayan from "../../../assets/img/shayan.jpg";
-import nadeem from "../../../assets/img/nadeem.jpg";
-import humza from "../../../assets/img/humza.jpg";
-import naureen from "../../../assets/img/naureen.jpg";
-import shoaib from "../../../assets/img/shoaib.jpg";
-import jamal from "../../../assets/img/jamal.jpg";
-import shafiq from "../../../assets/img/shafiq.jpg";
-import adeel from "../../../assets/img/adeel.jpg";
-import laiba from "../../../assets/img/laiba.jpg";
+import shayan from "../../../assets/img/team/shayan.jpg";
+import nadeem from "../../../assets/img/team/nadeem.jpg";
+import humza from "../../../assets/img/team/humza.jpg";
+import naureen from "../../../assets/img/team/naureen.jpg";
+import shoaib from "../../../assets/img/team/shoaib.jpg";
+import jamal from "../../../assets/img/team/jamal.jpg";
+import shafiq from "../../../assets/img/team/shafiq.jpg";
+import adeel from "../../../assets/img/team/adeel.jpg";
+import laiba from "../../../assets/img/team/laiba.jpg";
 
 // imvestors images #######################################################
 import planetN from "../../../assets/img/investors/planet-n.png";

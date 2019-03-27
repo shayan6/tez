@@ -5,7 +5,8 @@ nav a , nav ul a{
     color: #000;
 }
 nav ul a{
-    font-variant-caps: all-petite-caps;
+    /* font-variant-caps: all-petite-caps; */
+    text-transform: uppercase;
 }
 .show-on-large{
     display: none !important;

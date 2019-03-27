@@ -13,6 +13,22 @@
 .collapsible-header span{
     text-transform: uppercase;
 }
+
+/* side nav ####################################### */
 .sideLink li a.active{
     font-weight: 600;
+}
+.sideLink{
+    line-height: .7rem;
+}
+.sideLink li a p:hover{
+    line-height: .7rem;
+    color: rgb(252, 146, 87);
+    font-weight: 700;
+}
+.contentHead{
+    font-variant-caps: petite-caps;
+    font-size: 19px;
+    color:grey;
+    font-weight: 700;
 }

@@ -19,7 +19,7 @@ function AtTez(props) {
               <h5>JOIN THE REVOLUTION FOR FINANCIAL INCLUSION</h5>
               <p
                 style={{
-                  fontSize: "17px",
+                  fontSize: "16px",
                   lineHeight: "1.4rem",
                   textAlign: "justify"
                 }}
@@ -33,7 +33,7 @@ function AtTez(props) {
               </p>
               <p
                 style={{
-                  fontSize: "17px",
+                  fontSize: "16px",
                   lineHeight: "1.4rem",
                   textAlign: "justify"
                 }}
