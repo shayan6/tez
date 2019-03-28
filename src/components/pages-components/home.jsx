@@ -3,7 +3,7 @@ import { Slider, Slide } from 'react-materialize';
 class Home extends Component {
     render() { 
         return (
-            <section>
+            <section style={{backgroundImage: 'linear-gradient(#f8f8f8 1px, transparent 1px), linear-gradient(#f8f8f8 1px, transparent 1px), linear-gradient(#f8f8f8 1px, transparent 1px)'}}>
                 <h1>Home</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>

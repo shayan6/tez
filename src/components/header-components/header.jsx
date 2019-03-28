@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, SideNav} from 'react-materialize';
 import '../../assets/css/header-style.css';
-import logo from '../../assets/img/tez.png';
+import logo from '../../assets/img/tez-blue.png';
 
 class Header extends Component {
     render() { 
-        console.log(this.props.route);
-        let img = <img src={logo} className="headerLogo" alt="tez" />;
+        let img = <div><img src={logo} className="headerLogo" alt="tez" /></div>;
         return ( 
             <React.Fragment>
                 <Navbar brand={img} fixed={true} right>

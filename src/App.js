@@ -69,6 +69,7 @@ class App extends Component {
 
             <Route exact path="/about" component={Header} />
             <Route exact path="/about" component={About} />
+   
             {/* Other Pages Routes End   ******************************************************/}
 
             {/* Footer Component Start ********************************************************/}
@@ -89,4 +90,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;

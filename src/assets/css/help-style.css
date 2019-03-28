@@ -10,8 +10,14 @@
         padding: 1em 1rem;
     }
 }
+.collapsible-header{
+    /* border-bottom: 1px solid #4caf50; */
+}
 .collapsible-header span{
     text-transform: uppercase;
+}
+.collapsible-header i{
+    color: #039be5;
 }
 
 /* side nav ####################################### */

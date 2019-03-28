@@ -1,9 +1,17 @@
-
+.box{
+	padding: 5% 0;
+}
 /*Sentence*/
 .sentence{
     color: #222;
     padding-top: 1px;
     height: 100%;
+}
+
+.sentence p{
+	font-size: 1em;
+	line-height: 1.4rem;
+	text-align: justify;
 }
 /*Vertical Sliding*/
 .slidingVertical{
@@ -66,4 +74,19 @@
 	30% { opacity: 0; -ms-transform: translateY(-50px); }
 	80% { opacity: 0; }
 	100% { opacity: 0; }
+}
+
+
+@media (min-width: 600px){
+	.sentence span{
+		font-size: 45px;
+		font-weight: 700;
+	}
+}
+
+@media (max-width: 600px){
+	.sentence span{
+		font-size: 25px;
+		font-weight: 700;
+	}
 }

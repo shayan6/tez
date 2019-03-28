@@ -22,7 +22,7 @@ section{
 
 @media (min-width: 600px){
     .box{
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
     .box p{
@@ -42,7 +42,7 @@ section{
     background-color: #4caf50 !important;
 }
 .blue-text{
-    color:rgb(28, 111, 181);
+    color:#1c6fb5 !important;
 }
 .hrDivider{
     height: 1px;
