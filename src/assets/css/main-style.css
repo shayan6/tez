@@ -19,7 +19,9 @@ h1,h2,h3,h4,h5,h6,ul{
 section{
     margin: auto;
 }
-
+.box{
+	padding: 3% 0;
+}
 @media (min-width: 600px){
     .box{
         width: 80%;

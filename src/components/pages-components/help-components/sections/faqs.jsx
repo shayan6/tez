@@ -336,7 +336,6 @@ function Faqs(props) {
       <Grid container spacing={16}>
         <Hidden xsDown>
           <Grid item xs={2} sm={3} lg={3} style={{ padding: "19px" }}>
-            <br />
             <ul className="sideLink">
               <li className="contentHead">
                 Table Of Contents <hr />
@@ -392,7 +391,7 @@ function Faqs(props) {
         <Grid item xs={12} sm={9} lg={9} style={{ zIndex: "100" }}>
           <Collapsible
             accordion={true}
-            style={{ marginTop: "-80px", textAlign: "justify" }}
+            style={{ marginTop: "-100px", textAlign: "justify" }}
           >
             {props.FAQs.FAQs.map((objVal, key) => (
               <CollapsibleItem
