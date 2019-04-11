@@ -11,8 +11,8 @@ function AtTez(props) {
       >
         <Grid container>
           <Grid item xs={12} sm={12} lg={6} style={{ margin: "auto" }}>
-            <div className="sentence">
-              <span> AT TEZ WE </span>
+            <div className="sentence" >
+              <span className="colorBlack" > AT TEZ WE </span>
               <div className="slidingVertical">
                 <span style={{ color: "#00c851" }}>INNOVATE</span>
                 <span style={{ color: "#47ad7b" }}>EMPOWER</span>
@@ -20,8 +20,8 @@ function AtTez(props) {
                 <span style={{ color: "#fc9257" }}>ACCOMPLISH</span>
                 <span style={{ color: "#47ad7b" }}>EMBRACE</span>
               </div>
-              <h6>WE DON'T CREATE JOBS, WE MAKE CAREERS</h6>
-              <p>
+              <h6 className="colorBlack">WE DON'T CREATE JOBS, WE MAKE CAREERS</h6>
+              <p className="colorGrey">
                 Tez is the platform that allows you to realize your potential
                 completely, and to do what you are passionate about. We ensure
                 an inclusive culture on our turf, and provide equal
@@ -29,7 +29,7 @@ function AtTez(props) {
                 commitment and through mutual respect; we inspire loyalty
                 throughout our workforce.
               </p>
-              <p>
+              <p className="colorGrey">
                 Tez does not just appreciate innovation, we have an enabling
                 culture that encourages out-of-the-box ideas and approaches. You
                 need to have the freedom to pursue your ideas and present them
@@ -47,9 +47,9 @@ function AtTez(props) {
           >
             <Hidden smDown>
               <img
-                src={props.img.careerLearn}
+                src={props.img.careerTeam}
                 alt="career-grows"
-                style={{ height: "27vW", marginLeft: "auto", display: "block" }}
+                style={{ height: "22vW", marginLeft: "auto", display: "block" }}
               />
             </Hidden>
           </Grid>

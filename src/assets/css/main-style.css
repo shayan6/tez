@@ -16,6 +16,13 @@ h1,h2,h3,h4,h5,h6,ul{
 .collapsible-body,p{
     font-family: 'Open Sans';
 }
+.colorBlack{
+    color: #3C4858;
+}
+.colorGrey{
+    color: #636363;
+    font-weight: 500;
+}
 section{
     margin: auto;
 }

@@ -26,7 +26,7 @@ function RevolutionizingAccess(props){
               <h4 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5 " }}>
                 Tez is revolutionizing access to finance for the masses.
               </h4>
-              <p>
+              <p className="colorGrey">
                 Tez is a digital financial institution that is accelerating
                 access to finance across Pakistan. This means that Tez customers
                 can get an instant loan of up to PKR 10,000 within a few

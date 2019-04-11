@@ -4,6 +4,7 @@ import "../../../assets/css/career-style.css";
 
 import tecNetwork from "../../../assets/img/tec-network.png";
 import careerWomen from "../../../assets/img/career-women.png";
+import careerTeam from "../../../assets/img/career-team.gif";
 import careerLearn from "../../../assets/img/career-learn.png";
 import careerSuccess from "../../../assets/img/career-success.png";
 import careerGrow from "../../../assets/img/career-grow.png";
@@ -20,7 +21,8 @@ class Career extends Component {
             careerGrow,
             careerWomen,
             careerLearn,
-            careerSuccess
+            careerSuccess,
+            careerTeam
           }}
         />
         <PerksAndBenefits />

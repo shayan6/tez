@@ -31,9 +31,6 @@ import tezWallet from "../../../assets/img/tez-wallet.jpg";
 import inWhite from "../../../assets/img/in-white.png";
 
 class About extends Component {
-  componentWillMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
     return (
       <React.Fragment>

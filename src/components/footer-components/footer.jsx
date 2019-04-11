@@ -7,6 +7,7 @@ import "../../assets/css/footer-style.css";
 
 class FooterComponent extends Component {
   render() {
+    
     let {
       tezLogoBlue,
       fbImg,
@@ -14,16 +15,20 @@ class FooterComponent extends Component {
       tweetImg,
       playImg
     } = this.props.footerContent;
+
+    let onLinkClick = () => {
+      window.scrollTo(0, 0);
+    }
+
     return (
       <React.Fragment>
-        <footer
-          className="page-footer footer"
-          // style={{ backgroundImage: `url(${brickImg})` }}
-        >
+        <footer className="page-footer footer">
           <div className="footer-container">
             <Grid container>
               <Grid item xs={12} sm={12} lg={8}>
                 <Grid container>
+                  
+                  {/* Tez Image Footer Grid ############################################# */}
                   <Grid item xs={12} sm={4} lg={4} className="footer-img">
                     <img id="imgFooter" src={tezLogoBlue} alt="tez logo" />
                     <h6
@@ -34,6 +39,8 @@ class FooterComponent extends Component {
                     </h6>
                     <img src={playImg} alt="google play" height="46px" />
                   </Grid>
+
+                  {/* Contact Detail Footer Grid ############################################# */}
                   <Grid item xs={6} sm={4} lg={4}>
                     <ul className="footerContact">
                       <Hidden smDown>
@@ -41,20 +48,21 @@ class FooterComponent extends Component {
                           <h5>Contact</h5>
                         </li>
                       </Hidden>
-                      <li>
-                        <Icon>location_city</Icon>Karachi, Pakistan
-                      </li>
-                      <li>
-                        <Icon>mail</Icon>info@tezfinancialservices.pk
-                      </li>
-                      <li>
-                        <Icon>smartphone</Icon>+92-423-832-9614
-                      </li>
-                      <li>
-                        <Icon>smartphone</Icon>+92-321-135-4854
-                      </li>
+                      {[
+                        { icon: "location_city", html: "Karachi, Pakistan" },
+                        { icon: "mail", html: "info@tezfinancialservices.pk" },
+                        { icon: "smartphone", html: "+92-423-832-9614" },
+                        { icon: "smartphone", html: "+92-321-135-4854" }
+                      ].map((el, key) => (
+                        <li key={key}>
+                          <Icon>{el.icon}</Icon>
+                          {el.html}
+                        </li>
+                      ))}
                     </ul>
                   </Grid>
+                  
+                  {/* Links Footer Grid ############################################# */}
                   <Grid item xs={6} sm={4} lg={4}>
                     <ul className="footerLink">
                       <Hidden smDown>
@@ -62,28 +70,24 @@ class FooterComponent extends Component {
                           <h5>Links</h5>
                         </li>
                       </Hidden>
-                      <li>
-                        <Link to="/about">About</Link>
-                      </li>
-                      <li>
-                        <Link to="/about">Press</Link>
-                      </li>
-                      <li>
-                        <Link to="/career">Career</Link>
-                      </li>
-                      <li>
-                        <Link to="/about">Privacy Policy</Link>
-                      </li>
-                      <li>
-                        <Link to="/career">Site Map</Link>
-                      </li>
-                      <li>
-                        <Link to="/about">Terms & Conditions</Link>
-                      </li>
+                      {[
+                        { link: "/about", html: "About" },
+                        { link: "/about", html: "Press" },
+                        { link: "/career", html: "Career" },
+                        { link: "/career", html: "Privacy Policy" },
+                        { link: "/about", html: "Site Map" },
+                        { link: "/about", html: "Terms & Conditions" }
+                      ].map((el, key) => (
+                        <li key={key} onClick={onLinkClick}>
+                          <Link to={el.link}>{el.html}</Link>
+                        </li>
+                      ))}
                     </ul>
                   </Grid>
                 </Grid>
               </Grid>
+
+              {/* Join Us Footer Grid ############################################# */}
               <Hidden smDown>
                 <Grid item sm={12} lg={4} className="footerJoinUs">
                   <Grid container>

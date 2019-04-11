@@ -1,25 +1,43 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar, SideNav} from 'react-materialize';
-import '../../assets/css/header-style.css';
-import logo from '../../assets/img/tez-blue.png';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Navbar, SideNav } from "react-materialize";
+import "../../assets/css/header-style.css";
+import logo from "../../assets/img/tez-blue.png";
 
 class Header extends Component {
-    render() { 
-        let img = <div><img src={logo} className="headerLogo" alt="tez" /></div>;
-        return ( 
-            <React.Fragment>
-                <Navbar brand={img} fixed={true} right>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/tez_advance'>Tez Advance</Link></li>
-                    <li><Link to='/more_product'>More Products</Link></li>
-                    <li><Link to='/help'>Help</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
-                </Navbar>
-                <SideNav trigger={<i className="material-icons">view_headline</i>} options={{ closeOnClick: true }}></SideNav>
-            </React.Fragment>
-        );
-    }
+  render() {
+    let img = (
+      <div>
+        <img src={logo} className="headerLogo" alt="tez" />
+      </div>
+    );
+
+    let onLinkClick = () => {
+      window.scrollTo(0, 0);
+    };
+
+    return (
+      <React.Fragment>
+        <Navbar brand={img} fixed={true} right>
+          {[
+            { link: "/", html: "Home" },
+            { link: "/tez_advance", html: "Tez Advance" },
+            { link: "/more_product", html: "More Products" },
+            { link: "/help", html: "Help" },
+            { link: "/contact", html: "Contact" },
+          ].map((el, key) => (
+            <li key={key} onClick={onLinkClick}>
+              <Link to={el.link}>{el.html}</Link>
+            </li>
+          ))}
+        </Navbar>
+        <SideNav
+          trigger={<i className="material-icons">view_headline</i>}
+          options={{ closeOnClick: true }}
+        />
+      </React.Fragment>
+    );
+  }
 }
- 
+
 export default Header;

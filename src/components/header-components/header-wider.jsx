@@ -18,21 +18,17 @@ class Header extends Component {
     return (
       <React.Fragment>
         <Navbar className="header-wider-nav" brand={img} right>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/tez_advance">Tez Advance</Link>
-          </li>
-          <li>
-            <Link to="/more_product">More Products</Link>
-          </li>
-          <li>
-            <Link to="/help">Help</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          {[
+            { link: "/", html: "Home" },
+            { link: "/tez_advance", html: "Tez Advance" },
+            { link: "/more_product", html: "More Products" },
+            { link: "/help", html: "Help" },
+            { link: "/contact", html: "Contact" },
+          ].map((el, key) => (
+            <li key={key}>
+              <Link to={el.link}>{el.html}</Link>
+            </li>
+          ))}
         </Navbar>
         <SideNav
           trigger={<i className="material-icons">view_headline</i>}

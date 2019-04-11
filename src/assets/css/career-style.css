@@ -87,3 +87,20 @@
 		font-weight: 700;
 	}
 }
+
+
+
+/* Perk And Benefits CSS ##################################################### */
+.insideBenefitDiv{
+	margin: auto;
+}
+.insideBenefitDiv p{
+	margin: auto;
+}
+.insideBenefitDiv ul{
+	line-height: 1.6;
+}
+
+.insideBenefitDiv .ulAtTez li{
+	list-style-type: square !important; 
+}
