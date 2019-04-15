@@ -13,7 +13,7 @@ import Help from "./components/pages-components/help-components/help";
 import Home from "./components/pages-components/home";
 import Loader from "./components/loader";
 import MoreProduct from "./components/pages-components/more_product";
-import TezAdvance from "./components/pages-components/tez_advance";
+import TezAdvance from "./components/pages-components/advance-components/tez_advance";
 
 //pages images
 // import tezLogo from './assets/img/tez.png';

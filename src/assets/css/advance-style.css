@@ -1,11 +1,39 @@
-.process-steps .carousel.initialized{
-    height: 610px !important;
+/* .process-steps .carousel.initialized{
+    height: 670px !important;
 }
 .process-steps .indicators .indicator-item{
-    background-color:grey;
+    background-color:white;
+    border: 1px solid #1c6fb5;
+    height: 15px;
+    width: 15px;
 }
 .process-steps .indicators .indicator-item.active{
-    background-color:black;
-    height: 10px;
-    width: 10px;
+    background-color:#1c6fb5;
+}
+.carousel .indicators {
+    bottom: -2rem;
+}
+.carousel .carousel-item img {
+    width: 100%;
+}
+.ulStep li{
+    list-style-type: circle !important;
+} */
+
+@media (min-width: 960px){
+    .MuiTab-root-38 {
+        font-size: 1rem !important;
+    }
+}
+
+.MuiTab-root-38 {
+    font-family: 'Open Sans' !important;
+    font-weight: 600 !important;
+}
+.MuiPaper-elevation2-5 {
+    box-shadow: 0px 0px !important;
+}
+button:focus {
+    outline: none;
+    background-color: white;
 }
