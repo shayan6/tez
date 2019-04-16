@@ -25,7 +25,9 @@
         font-size: 1rem !important;
     }
 }
-
+.MuiPrivateTabIndicator-colorSecondary-55{
+    background-color: #4caf50 !important;
+}
 .MuiTab-root-38 {
     font-family: 'Open Sans' !important;
     font-weight: 600 !important;

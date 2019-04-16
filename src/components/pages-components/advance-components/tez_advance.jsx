@@ -57,35 +57,41 @@ class TezAdvance extends Component {
       {
         value: 4,
         heading: "Get a Limit",
-        content: "Tasdeeq ka marhala poora honay per Limit haasil karein. Tez ka system aapki dee gayi maloomat aur deegar data ko istemal karte huay apako Rs.1,000 sey Rs.5,000 tak kee limit assign karta hay"
+        content:
+          "Tasdeeq ka marhala poora honay per Limit haasil karein. Tez ka system aapki dee gayi maloomat aur deegar data ko istemal karte huay apako Rs.1,000 sey Rs.5,000 tak kee limit assign karta hay"
       },
       {
         value: 5,
         heading: "Choose Wallet",
-        content: "Tez apnay sarifeen ko mobile wallets ke zariye raqm faraham kerta hay. Easypaisa, SimSim aur UBL Omni wallets mein Tez Advance ki raqm deposit hotee hay. Wallet application download karein iss link sey bit.ly/walletspk aur register honay kay baad Tez Application mein usski tafseelat darj karein"
+        content:
+          "Tez apnay sarifeen ko mobile wallets ke zariye raqm faraham kerta hay. Easypaisa, SimSim aur UBL Omni wallets mein Tez Advance ki raqm deposit hotee hay. Wallet application download karein iss link sey bit.ly/walletspk aur register honay kay baad Tez Application mein usski tafseelat darj karein"
       },
       {
         value: 6,
         heading: "Get Advance",
         content: "Rs.1,000 sey Rs.5,000 tak ka Tez Advance fori haasil karein"
       },
-      { value: 7, heading: "Repay Advance", content: "Application mein jaa ker mein page per Repay Advance per press kijiye aur wajib ul adaa raqm adaa karein aur limit barhaney ka chance haasil karien" }
+      {
+        value: 7,
+        heading: "Repay Advance",
+        content:
+          "Application mein jaa ker mein page per Repay Advance per press kijiye aur wajib ul adaa raqm adaa karein aur limit barhaney ka chance haasil karien"
+      }
     ];
 
     return (
       <section>
         <div className="box">
-          <h3 className="colorBlack" style={{ textAlign: "center" }}>
+          <h4 className="colorBlack" style={{ textAlign: "center" }}>
             TEZ ADVANCE
-          </h3>
+          </h4>
+          <br />
           <Paper square>
             <Tabs
               value={value}
               onChange={this.handleChange}
               variant="scrollable"
               scrollButtons="on"
-              indicatorColor="primary"
-              textColor="primary"
             >
               <Tab label="Install" />
               <Tab label="Download" />
@@ -96,7 +102,8 @@ class TezAdvance extends Component {
               <Tab label="Get Advance" />
               <Tab label="Repay Advance" />
             </Tabs>
-            {contentTab.map(
+          </Paper>
+          {contentTab.map(
               (el, key) =>
                 value === el.value && (
                   <TabContainer key={key}>
@@ -104,7 +111,6 @@ class TezAdvance extends Component {
                   </TabContainer>
                 )
             )}
-          </Paper>
         </div>
       </section>
     );
