@@ -4,7 +4,7 @@
     padding-right:5%;
 }
 footer.page-footer {
-    background-color: #f5f5f5;
+    background-image:linear-gradient(to right, #eef1f9, #f9fafe);
 }
 .footerJoinUs{
     border-left: 1px solid #4caf50;

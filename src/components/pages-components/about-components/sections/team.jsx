@@ -101,7 +101,7 @@ function Team(props) {
     }
   ];
   return (
-    <section style={{ background: "rgb(242, 242, 242)" }}>
+    <section style={{backgroundImage:'linear-gradient(to right, #eef1f9, #f9fafe)'}}>
       <div
         className="box"
         data-aos="fade-up"

@@ -5,6 +5,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import HowToAdvance from "./sections/how-to-advence";
+import LoanCalculator from "./sections/loan-calculator";
 
 function TabContainer({ children, dir }) {
   return (
@@ -80,30 +81,43 @@ class TezAdvance extends Component {
     ];
 
     return (
-      <section>
-        <div className="box">
-          <h4 className="colorBlack" style={{ textAlign: "center" }}>
-            TEZ ADVANCE
-          </h4>
-          <br />
-          <Paper square>
-            <Tabs
-              value={value}
-              onChange={this.handleChange}
-              variant="scrollable"
-              scrollButtons="on"
+      <React.Fragment>
+        <section
+          style={{
+            backgroundImage: "linear-gradient(to right, #eef1f9, #f9fafe)"
+          }}
+        >
+          <div className="box">
+            <h4 className="colorBlack" style={{ textAlign: "center" }}>
+              HOW TEZ WORKS
+            </h4>
+            <p className="colorGrey" style={{ textAlign: "center"}} >Want a loan of up to PKR 10,000. See how Tez works it's a matter of minutes.</p>
+            <br />
+            <Paper
+              square
+              style={{
+                boxShadow: "0px 0px 0px 0px rgba(0,0,0,0.0)",
+                background: "rgba(0,0,0,0)",
+                fontFamily: "Open Sans"
+              }}
             >
-              <Tab label="Install" />
-              <Tab label="Download" />
-              <Tab label="Signup" />
-              <Tab label="Get Verified" />
-              <Tab label="Get a Limit" />
-              <Tab label="Choose Wallet" />
-              <Tab label="Get Advance" />
-              <Tab label="Repay Advance" />
-            </Tabs>
-          </Paper>
-          {contentTab.map(
+              <Tabs
+                value={value}
+                onChange={this.handleChange}
+                variant="scrollable"
+                scrollButtons="on"
+              >
+                <Tab label="Install" />
+                <Tab label="Download" />
+                <Tab label="Signup" />
+                <Tab label="Get Verified" />
+                <Tab label="Get a Limit" />
+                <Tab label="Choose Wallet" />
+                <Tab label="Get Advance" />
+                <Tab label="Repay Advance" />
+              </Tabs>
+            </Paper>
+            {contentTab.map(
               (el, key) =>
                 value === el.value && (
                   <TabContainer key={key}>
@@ -111,8 +125,10 @@ class TezAdvance extends Component {
                   </TabContainer>
                 )
             )}
-        </div>
-      </section>
+          </div>
+        </section>
+        <LoanCalculator/>
+      </React.Fragment>
     );
   }
 }

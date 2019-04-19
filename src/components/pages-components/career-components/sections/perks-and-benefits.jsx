@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import { Carousel } from "react-materialize";
 import sli2 from '../../../../assets/img/slider/sli2.jpg'
 import sli3 from '../../../../assets/img/slider/sli3.jpg'
+import cTeam from '../../../../assets/img/team/cTeam.jpg'
 
 
 function PerksAndBenefits() {
@@ -35,7 +36,7 @@ function PerksAndBenefits() {
   };
 
   return (
-    <section style={{ background: "#f4f4f4", padding: "2% 0" }}>
+    <section style={{ backgroundImage:'linear-gradient(to right, #eef1f9, #f9fafe)', padding: "2% 0" }}>
       <div className="box">
         <Grid container>
           <Grid item xs={12} sm={12} lg={12}>
@@ -49,9 +50,9 @@ function PerksAndBenefits() {
             <br />
           </Grid>
           <Grid item xs={12}>
-            <Grid container justify="center" spacing={24}>
+            <Grid container justify="center" spacing={16}>
               <Grid item xs={12} sm={12} lg={6}>
-                <div style={{ ...eachGrid, backgroundColor: "white" }} />
+                <div style={{ ...eachGrid, backgroundImage: `url(${cTeam})`, backgroundSize:'cover', backgroundPosition:'center' }} />
               </Grid>
               <Grid item xs={12} sm={6} lg={3}>
                 <div style={{ ...eachGrid, backgroundColor: "white" }}>

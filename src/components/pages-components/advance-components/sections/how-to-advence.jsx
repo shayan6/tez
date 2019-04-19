@@ -13,7 +13,7 @@ function HowToAdvance(props) {
 
   return (
     <Grid container>
-      <Grid item sm={6} lg={6} style={{ padding: "5%" }}>
+      <Grid item sm={6} lg={6} className="instAdvance">
         <div data-aos="fade-up" data-aos-duration="600" data-aos-once="true">
           <h5 className="blue-text" style={{ textTransform: "uppercase" }}>
             {props.heading}
@@ -27,35 +27,41 @@ function HowToAdvance(props) {
           data-aos-duration="600"
           data-aos-once="true"
         >
-          <p
-            className="colorGrey"
-            style={{ textAlign: "justify" }}
-          >
+          <p className="colorGrey" style={{ textAlign: "justify" }}>
             {props.content}
           </p>
         </div>
       </Grid>
-      <Grid item sm={6} lg={6} style={{ textAlign: "center" }}>
+      <Grid
+        item
+        sm={6}
+        lg={6}
+        style={{
+          textAlign: "center",
+          padding: "3%",
+          backgroundImage: `url(${cell})`,
+          backgroundSize: "contain",
+          backgroundRepeat: " no-repeat",
+          backgroundPosition: "center"
+        }}
+      >
         <img
           src={ss}
           alt="screen shot"
-          data-aos="fade-left"
-          data-aos-delay="200"
+          data-aos="zoom-in-left"
+          data-aos-delay="100"
           data-aos-duration="1000"
           data-aos-once="true"
-          style={{ ...style.img, margin: "8% 11% 11%" }}
+          className="object"
+          style={{ ...style.img }}
         />
-        {/* <img
-          src={cell}
-          alt="Cell"
-        /> */}
         <img
           src={ss}
           alt="screen shot"
-          data-aos="fade-left"
-          data-aos-delay="300"
+          data-aos="zoom-in-right"
           data-aos-duration="1100"
           data-aos-once="true"
+          className="object2"
           style={{ ...style.img }}
         />
       </Grid>
