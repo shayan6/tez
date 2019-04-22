@@ -110,6 +110,11 @@ button:focus {
 .loanCal{
     line-height: 0.1;
 }
+.loanCal h5 span {
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+    border-radius: 100%;
+    cursor: pointer;
+}
 
 .tenureButtons{
     display: flex;
@@ -130,3 +135,62 @@ button:focus {
     }
 }
 
+.amountToReturn{
+    background: #1c6fb5;
+    color: white;
+    border-radius: 10px;
+    padding: 1%
+}
+
+/* customer testimoinal */
+.testimonialContainer{
+    padding: 10%;
+    text-align: center;
+}
+
+@media (min-width: 960px){
+    .testimonialContainer{
+        padding: 0 10% 0 0;
+        text-align: left;
+    }    
+}
+
+.perCustomer h5{
+    text-align: center;
+    font-variant: small-caps;
+}
+.perCustomer .imgBox img {
+    width: 55%;
+    border-radius: 50%; 
+    float: center;
+    margin: auto;
+}
+.quotes-head{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.curly-quotes{
+    font-weight: 600;
+}
+.curly-quotes:before, .curly-quotes:after {
+    display: inline-block;
+    vertical-align: top;
+    height: 10px;
+    line-height: 48px;
+    font-size: 50px;
+    color: #1c6fb5;
+    opacity: .5;
+  }
+  
+  .curly-quotes:before {
+    content: '\201C';
+    margin-right: 4px;
+    margin-left: -8px;
+  }
+  
+  .curly-quotes:after {
+    content: '\201D';
+    margin-left: 4px;
+    margin-right: -8px;
+  }
+  

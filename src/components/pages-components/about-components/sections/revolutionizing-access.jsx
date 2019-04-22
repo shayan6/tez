@@ -32,7 +32,7 @@ function RevolutionizingAccess(props){
                 can get an instant loan of up to PKR 10,000 within a few
                 minutes, all at the convenience of their own phones.
               </p>
-              <Button variant="contained" color="primary">
+              <Button variant="contained" color="primary" style={{background:'rgb(28, 111, 181)'}}>
                 Open An Account
               </Button>
               <br />
