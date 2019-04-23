@@ -124,7 +124,7 @@ class LoanCalculator extends Component {
                 <Icon color="primary" onClick={this.handleAmountMinus}>
                   remove_circle
                 </Icon>
-                &nbsp; {this.currency(this.state.loanAmount)}
+                &nbsp; { "PKR " + this.currency(this.state.loanAmount)}
                 &nbsp;
                 <Icon color="primary" onClick={this.handleAmountPlus}>
                   add_circle

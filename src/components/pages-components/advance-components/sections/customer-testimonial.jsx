@@ -2,6 +2,8 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Slider from "react-slick";
 import shoaib from "../../../../assets/img/team/shoaib.jpg";
+import ahsan from "../../../../assets/img/customer/ahsan.jpg";
+import sunil from "../../../../assets/img/customer/sunil.jpg";
 
 function CustomerTestimonial(props) {
   const { textWhite, boldHR } = props.style;
@@ -17,12 +19,12 @@ function CustomerTestimonial(props) {
 
   const tezCustomer = [
     {
-      srcPic: shoaib,
+      srcPic: sunil,
       name: "Sunil Yousaf",
       comment: "Koi To Hai Jo Sath Deta Hai Jese Ap Log"
     },
     {
-      srcPic: shoaib,
+      srcPic: ahsan,
       name: "Ahsan Mehmood",
       comment:
         "Excellent Services provided by Tez Team. I am Using It & Enjoying Much More."

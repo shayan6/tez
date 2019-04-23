@@ -50,6 +50,9 @@ section{
 .blue-text{
     color:#1c6fb5 !important;
 }
+.bgGrey{
+    background-image:linear-gradient(to right, #eef1f9, #f9fafe);
+}
 .hrDivider{
     height: 1px;
     width: 70px;

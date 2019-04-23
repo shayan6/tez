@@ -1,25 +1,48 @@
-import React, { Component } from 'react';
-import { Parallax } from 'react-materialize';
+import React, { Component } from "react";
+import { Parallax } from "react-materialize";
+import Grid from "@material-ui/core/Grid";
 class MoreProduct extends Component {
-    render() { 
-        return (
-            <section>
-                <h1>More Product</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
-                <div>
-                    <Parallax imageSrc="http://materializecss.com/images/parallax1.jpg"/>
-                    <div className="section white">
-                        <div className="row container">
-                        <h2 className="header">Parallax</h2>
-                        <p className="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-                        </div>
-                    </div>
-                    <Parallax imageSrc="http://materializecss.com/images/parallax2.jpg"/>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ullam facilis fuga officiis nisi molestiae quisquam recusandae, voluptates doloremque similique veritatis voluptate, architecto reiciendis iste dolorum error rem vitae.</p>
-            </section> 
-        );
-    }
+  render() {
+    return (
+      <React.Fragment>
+        <section>
+          <Parallax imageSrc="https://www.solarsystemscope.com/textures/download/2k_stars.jpg" />
+        </section>
+        <section>
+          <Grid container>
+            <Grid item xs={12} sm={7} lg={7} />
+            <Grid item xs={12} sm={5} lg={5}>
+              <div className="boxRight">
+                <ul className="advanceUL">
+                  <li>
+                    <p>
+                      Fill in a few details, to get your unique credit limit.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Instant Approval to take loan of PKR 1,000 to PKR 10,000
+                    </p>
+                  </li>
+                  <li>
+                    <p>A Fixed Charges, No Compounding Interest!</p>
+                  </li>
+                  <li>
+                    <p>
+                      Choose to conveniently repay between 1 week to 4 weeks
+                    </p>
+                  </li>
+                  <li>
+                    <p>Privacy Guaranteed</p>
+                  </li>
+                </ul>
+              </div>
+            </Grid>
+          </Grid>
+        </section>
+      </React.Fragment>
+    );
+  }
 }
- 
+
 export default MoreProduct;

@@ -24,11 +24,22 @@ import accion from "../../../assets/img/investors/accion.png";
 import Team from "./sections/team";
 import Investors from "./sections/investors";
 
+// Partners images #######################################################
+import easypaisa from "../../../assets/img/partners/easypaisa.png";
+import omni from "../../../assets/img/partners/omni.png";
+import simsim from "../../../assets/img/partners/SIMSIM.png";
+import datalift from "../../../assets/img/partners/datalift.jpg";
+import venturedive from "../../../assets/img/partners/venturedive.png";
+import jublee from "../../../assets/img/partners/jublee.png";
+import efu from "../../../assets/img/partners/efu.png";
+import tpl from "../../../assets/img/partners/TPL-Life.png";
+
 //extra images #############################################################
 import imgHand from "../../../assets/img/hand-mobile.png";
 import imgTecTree from "../../../assets/img/tec-tree.png";
 import tezWallet from "../../../assets/img/tez-wallet.jpg";
 import inWhite from "../../../assets/img/in-white.png";
+import Partners from "./sections/partners";
 
 class About extends Component {
   render() {
@@ -61,7 +72,22 @@ class About extends Component {
 
         {/* Section Tez investors start *********************************************************************/}
         <Investors img={{ planetN, omidyar, accion }} />
-        {/* Section Tez investors end *********************************************************************/}
+        {/* Section Tez investors end ***********************************************************************/}
+
+        {/* Section Tez Partners start *********************************************************************/}
+        <Partners
+          img={{
+            easypaisa,
+            omni,
+            simsim,
+            datalift,
+            venturedive,
+            jublee,
+            efu,
+            tpl
+          }}
+        />
+        {/* Section Tez Partners end ***********************************************************************/}
       </React.Fragment>
     );
   }

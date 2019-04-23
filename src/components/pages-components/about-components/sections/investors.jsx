@@ -70,7 +70,7 @@ function Investors(props) {
                         <strong>{objVal.name}</strong>
                       </h5>
                       <p>{objVal.description}</p>
-                      <i> Icon </i>
+                      {/* <i> Icon </i> */}
                     </Grid>
                     <Grid item xs={12} sm={6} lg={6}>
                       <div className="imgBox">
