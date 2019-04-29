@@ -41,7 +41,7 @@ function PerksAndBenefits() {
         <Grid container>
           <Grid item xs={12} sm={12} lg={12}>
             <h3 className="blue-text" style={styleHeading}>
-              {"PERK AND BENIFITS"}
+              {"PERK AND BENEFITS"}
             </h3>
             <h3 className="colorBlack" style={styleHeading}>
               {"of working with tez"}

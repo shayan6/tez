@@ -95,10 +95,13 @@ class TezAdvance extends Component {
             <br />
             <Paper
               square
+              className="tabsContainer"
               style={{
                 boxShadow: "0px 0px 0px 0px rgba(0,0,0,0.0)",
                 background: "rgba(0,0,0,0)",
-                fontFamily: "Open Sans"
+                fontFamily: "Open Sans",
+                fontWeight:'600',
+                borderColor: '#4caf50'
               }}
             >
               <Tabs

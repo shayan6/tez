@@ -1,0 +1,88 @@
+.bgPakistan{
+   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Provinces_and_territories_of_Pakistan_blank.svg/1126px-Provinces_and_territories_of_Pakistan_blank.svg.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   /* opacity:0.4; */
+}
+
+.floating:nth-child(even) {
+   animation: mover 9s linear infinite;
+}
+.floating:nth-child(odd) {
+   animation: mover 7s linear infinite;
+}
+
+@-webkit-keyframes mover {
+   0%, 100% { transform: translateY(0); }
+   50%  { transform: translateY(-10px); }
+}
+@keyframes mover {
+   0%, 100% { transform: translateY(0); }
+   50% { transform: translateY(-10px); }
+}
+
+
+.innerProduct {
+    position: relative;
+    height: 40vW;
+    /* border: 1px solid black; */
+ }
+.picture {
+   position: absolute;
+   width: 10vw;
+   border-radius: 1vw;
+   /* border-radius: 50px; */
+}
+.pic_1 {
+    left: 8vW;
+    top: 7vW;
+}
+.pic_2 {
+   left: 25vw;
+   top: 0vw;
+   width: 12vw;
+}
+.pic_3 {
+   right: 0vw;
+   bottom: 1vw;
+   width: 11vw;
+}
+.pic_4 {
+   left: 5vw;
+   bottom: 13vw;
+   width: 11vw;
+}
+.pic_5 {
+   left: 16vw;
+   bottom: 5vw;
+}
+.pic_6 {
+   left: 23vw;
+   top: 10vw;
+}
+.pic_7 {
+   left: 0vw;
+   bottom: 0vw;
+   width: 12vw;
+}
+
+
+
+/* Tez product description */
+.advanceLI strong{
+   color: rgb(60, 206, 137);
+   font-weight: 800;
+}
+.advanceLI li:before{
+  content: "\2605";
+  margin-right:1%;
+  color: orange; 
+}
+.fontProduct{
+   background-color: #fff;
+   color: transparent;
+   text-shadow: 0px 2px 3px rgba(255,255,255,0.1);
+   -webkit-background-clip: text;
+      -moz-background-clip: text;
+           background-clip: text;
+ }

@@ -30,18 +30,18 @@
     }
 }
 
-@media (min-width: 960px){
+/* @media (min-width: 960px){
     .MuiTab-root-38 {
         font-size: 1rem !important;
     }
-}
-.MuiPrivateTabIndicator-colorSecondary-55{
+} */
+.tabsContainer div > span:first-of-type{
     background-color: #4caf50 !important;
 }
-.MuiTab-root-38 {
+/* .MuiTab-root-38 {
     font-family: 'Open Sans' !important;
     font-weight: 600 !important;
-}
+} */
 button:focus {
     outline: none;
     background-color: rgba(0,0,0,0);

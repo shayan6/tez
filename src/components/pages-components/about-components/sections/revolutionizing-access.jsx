@@ -23,8 +23,8 @@ function RevolutionizingAccess(props){
               data-aos-once="true"
               style={{ margin: "auto", textAlign: "justify" }}
             >
-              <h4 style={{ fontVariantCaps: "small-caps", color: "#1c6fb5 " }}>
-                Tez is revolutionizing access to finance for the masses.
+              <h4 className="blue-text headingCaps">
+                Tez Is Revolutionizing Access To Finance For The Masses.
               </h4>
               <p className="colorGrey">
                 Tez is a digital financial institution that is accelerating
